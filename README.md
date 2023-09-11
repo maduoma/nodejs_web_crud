@@ -47,6 +47,7 @@ Open your browser and navigate to `http://localhost:3000`.
 ## Folder Structure
 
 
+```plaintext
 nodejs-crud-app/
 |-- node_modules/          # Node.js dependencies
 |-- public/                # Frontend files
@@ -57,6 +58,7 @@ nodejs-crud-app/
 |-- app.js                 # Backend Node.js and Express application
 |-- package.json           # Project metadata and dependencies
 |-- package-lock.json      # Dependency version lock
+```
 
 
 ## Features
