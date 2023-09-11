@@ -1,20 +1,77 @@
-USE [NODEJS-CRUD]
-GO
+# Node.js CRUD Web Application
 
-/****** Object:  Table [dbo].[users]    Script Date: 10/09/2023 23:57:43 ******/
-SET ANSI_NULLS ON
-GO
+This is a Node.js CRUD web application that uses Express, MS SQL Server for the backend and jQuery, Bootstrap, SweetAlert and DataTables for the frontend.
 
-SET QUOTED_IDENTIFIER ON
-GO
+## Table of Contents
 
-CREATE TABLE [dbo].[users](
-	[id] [int] IDENTITY(1,1) NOT NULL,
-	[name] [nvarchar](100) NULL,
-	[email] [nvarchar](100) NULL,
- CONSTRAINT [PK_users] PRIMARY KEY CLUSTERED 
-(
-	[id] ASC
-)WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON, OPTIMIZE_FOR_SEQUENTIAL_KEY = OFF) ON [PRIMARY]
-) ON [PRIMARY]
-GO
+- [Node.js CRUD Web Application](#nodejs-crud-web-application)
+	- [Table of Contents](#table-of-contents)
+	- [Installation](#installation)
+	- [Usage](#usage)
+	- [Folder Structure](#folder-structure)
+	- [Features](#features)
+	- [Technologies Used](#technologies-used)
+
+## Installation
+
+1. Clone the repository:
+
+\`\`\`bash
+git clone https://github.com/yourusername/nodejs-crud-app.git
+\`\`\`
+
+2. Navigate into the directory:
+
+\`\`\`bash
+cd nodejs-crud-app
+\`\`\`
+
+3. Install the dependencies:
+
+\`\`\`bash
+npm install
+\`\`\`
+
+4. Start the application:
+
+\`\`\`bash
+npm start
+\`\`\`
+
+## Usage
+
+Open your browser and navigate to `http://localhost:3000`.
+
+## Folder Structure
+
+\`\`\`
+nodejs-crud-app/
+|-- node_modules/          # Node.js dependencies
+|-- public/                # Frontend files
+|   |-- css/               # Stylesheets
+|   |-- js/                # JavaScript files
+|   |   |-- app.js         # Frontend application logic
+|   |-- index.html         # Main HTML file
+|-- app.js                 # Backend Node.js and Express application
+|-- package.json           # Project metadata and dependencies
+|-- package-lock.json      # Dependency version lock
+\`\`\`
+
+## Features
+
+- CRUD Operations: Create, Read, Update, Delete
+- DataTables for tabular data
+- SweetAlert for notifications
+- Form validation
+
+## Technologies Used
+
+- Node.js
+- Express
+- jQuery
+- DataTables
+- SweetAlert
+- MS SQL Server
+- Bootstrap
+- Ajax
+- Javascript
