@@ -1,6 +1,6 @@
 # Node.js CRUD Web Application
 
-This is a Node.js CRUD web application that uses Express, MS SQL Server for the backend and jQuery, Bootstrap, SweetAlert and DataTables for the frontend.
+This is a Node.js CRUD web application that uses Express, MS SQL Server for the backend and jQuery, Bootstrap, SweetAlert, HTML and DataTables for the frontend.
 
 ## Table of Contents
 
@@ -79,3 +79,4 @@ nodejs-crud-app/
 - Bootstrap
 - Ajax
 - Javascript
+- HTML
