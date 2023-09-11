@@ -1,4 +1,4 @@
-
+require('dotenv').config();
 const express = require('express');
 const bodyParser = require('body-parser');
 const sql = require('mssql');
@@ -16,16 +16,28 @@ app.get('/', (req, res) => {
     res.sendFile(path.join(__dirname, 'public', 'index.html'));
 });
 
+
 const config = {
-    user: 'M.Achilefu', // your username
-    password: '123', // your password
-    server: '00287',
-    database: 'NODEJS-CRUD', // your database name
+    user: process.env.DB_USER,
+    password: process.env.DB_PASSWORD,
+    server: process.env.DB_SERVER,
+    database: process.env.DB_DATABASE,
     options: {
-        encrypt: true,
-        trustServerCertificate: true  // Change this to true to trust self-signed certificates
+        encrypt: process.env.DB_ENCRYPT === 'true',
+        trustServerCertificate: process.env.DB_TRUST_SERVER_CERTIFICATE === 'true'
     }
-};
+}; 
+
+// const config = {
+//     user: 'M.Achilefu', // your username
+//     password: '123', // your password
+//     server: '00287',
+//     database: 'NODEJS-CRUD', // your database name
+//     options: {
+//         encrypt: true,
+//         trustServerCertificate: true  // Change this to true to trust self-signed certificates
+//     }
+// };
 
 sql.connect(config).catch(err => console.log(err));
 
