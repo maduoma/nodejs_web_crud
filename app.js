@@ -1,4 +1,4 @@
-require('dotenv').config();
+require('dotenv').config(); // If you don't want to use .env file, Comment this line
 const express = require('express');
 const bodyParser = require('body-parser');
 const sql = require('mssql');
@@ -16,7 +16,7 @@ app.get('/', (req, res) => {
     res.sendFile(path.join(__dirname, 'public', 'index.html'));
 });
 
-
+// If you don't want to use .env file, Comment this code below
 const config = {
     user: process.env.DB_USER,
     password: process.env.DB_PASSWORD,
@@ -28,6 +28,7 @@ const config = {
     }
 }; 
 
+// If you don't want to use .env file, uncomment this code below
 // const config = {
 //     user: 'M.Achilefu', // your username
 //     password: '123', // your password
