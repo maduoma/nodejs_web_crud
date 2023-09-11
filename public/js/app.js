@@ -36,10 +36,10 @@ $(document).ready(function () {
     $('#saveBtn').click(function () {
         const name = $('#nameInput').val();
         const email = $('#emailInput').val();
-
+        const emailRegex = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
         // Perform validation here
-        if (!name || !email) {
-            Swal.fire('Validation Error', 'Name and Email fields are required', 'error');
+        if (name.length < 10 || !email.match(emailRegex)) {
+            Swal.fire('Validation Error', 'Name must be at least 10 characters and Email must be a valid email address', 'error');
             return;
         }
 
@@ -70,10 +70,11 @@ $(document).ready(function () {
         const id = $('#idInput').val();
         const name = $('#nameInput').val();
         const email = $('#emailInput').val();
+        const emailRegex = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
 
-        // Perform validation here
-        if (!id || !name || !email) {
-            Swal.fire('Validation Error', 'ID, Name, and Email fields are required', 'error');
+        //Perform validation here
+        if (!id || name.length < 10 || !email.match(emailRegex)) {
+            Swal.fire('Validation Error', 'ID is required, Name must be at least 10 characters, and Email must be a valid email address', 'error');
             return;
         }
 
