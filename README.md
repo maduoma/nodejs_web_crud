@@ -14,29 +14,31 @@ This is a Node.js CRUD web application that uses Express, MS SQL Server for the 
 
 ## Installation
 
-1. Clone the repository:
+Follow the steps below to install and run the application:
 
-\`\`\`bash
-git clone https://github.com/yourusername/nodejs-crud-app.git
-\`\`\`
+1. **Clone the repository:**
 
-2. Navigate into the directory:
+    ```bash
+    git clone https://github.com/yourusername/nodejs-crud-app.git
+    ```
 
-\`\`\`bash
-cd nodejs-crud-app
-\`\`\`
+2. **Navigate into the directory:**
 
-3. Install the dependencies:
+    ```bash
+    cd nodejs-crud-app
+    ```
 
-\`\`\`bash
-npm install
-\`\`\`
+3. **Install the dependencies:**
 
-4. Start the application:
+    ```bash
+    npm install
+    ```
 
-\`\`\`bash
-npm start
-\`\`\`
+4. **Start the application:**
+
+    ```bash
+    npm start
+    ```
 
 ## Usage
 
@@ -44,7 +46,7 @@ Open your browser and navigate to `http://localhost:3000`.
 
 ## Folder Structure
 
-\`\`\`
+
 nodejs-crud-app/
 |-- node_modules/          # Node.js dependencies
 |-- public/                # Frontend files
@@ -55,7 +57,7 @@ nodejs-crud-app/
 |-- app.js                 # Backend Node.js and Express application
 |-- package.json           # Project metadata and dependencies
 |-- package-lock.json      # Dependency version lock
-\`\`\`
+
 
 ## Features
 
